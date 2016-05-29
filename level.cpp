@@ -8,6 +8,8 @@ Level::Level(){
 #testing for git
 #etc.
 
+#more test comments
+#even more test comments
 Level::Level(int levelWidth, int levelHeight, QString type, int playerWidth, int playerHeight, int xPos, int yPos, int velocity,
 QPair<int,int> direction, int curSet, int curFrame, QString spriteType){
     this->width = levelWidth;
