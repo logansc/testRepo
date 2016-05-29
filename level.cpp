@@ -10,6 +10,8 @@ Level::Level(){
 
 #more test comments
 #even more test comments
+
+#adding comment for conflict from gitTest 2.  2222222
 Level::Level(int levelWidth, int levelHeight, QString type, int playerWidth, int playerHeight, int xPos, int yPos, int velocity,
 QPair<int,int> direction, int curSet, int curFrame, QString spriteType){
     this->width = levelWidth;
