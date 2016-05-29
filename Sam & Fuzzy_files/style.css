@@ -1,0 +1,1112 @@
+﻿/*
+ * @author Michał Matyas <michal@higher.lv>
+ * @license MIT License
+ * Copyright (C) 2011
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+    display:block;
+}
+
+ul {
+    list-style:none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/*
+h1, h2, h3, h4, h5, h6,
+em, strong, i, b, address, cite, q, dfn, th, a {
+	font-style: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}
+*/
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+th, td {
+  vertical-align: top;
+  text-align: left;
+}
+
+button, input, select, option, textarea {
+	font: inherit;
+}
+
+input::-moz-focus-inner {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+ * == SAM AND FUZZY base.css ==
+ */
+
+html
+{
+	background: #a59c9d url('../img/bg.png') 50% 0 repeat-x;
+	color: black;
+}
+
+body
+{
+	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+
+	background: url('') 50% 0 repeat-y; 
+}
+
+#site
+{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* == Text == */
+
+a
+{
+	color: #555;
+}
+
+a:hover
+{
+	color: #000;
+}
+
+a.block,
+.page-header h1
+{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+/* == NAV == */
+
+.nav-block li
+{
+	float: left;
+}
+
+/* == Columns == */
+
+.container,
+.nav-block
+{
+	*zoom: 1; /* IE hack */
+}
+
+.container:after,
+.nav-block:after
+{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.column
+{
+	float: left;
+}
+
+	.column.column-1
+	{
+		width: 25%;
+	}
+
+	.column.column-2
+	{
+		width: 50%;
+	}
+
+	.column.column-3
+	{
+		width: 75%;
+	}
+
+	.column.column-4
+	{
+		width: 100%;
+	}
+
+	.column.content
+	{
+		width: 620px;
+	}
+
+	.column.sidebar
+	{
+		width: 380px;
+	}
+
+	.column.image
+	{
+		width: 236px;
+	}
+	
+	.column.description
+	{
+		width: 344px;
+	}
+	
+/* == Ads == */
+
+.ads.ads-wide
+{
+	width: 730px;
+	height: 90px;
+}
+
+.ads.ads-long
+{
+	width: 160px;
+	height: 600px;
+}
+
+.ads.ads-box
+{
+	width: 300px;
+	height: 250px;
+}
+
+/* == Content == */
+
+.content
+{
+	-webkit-box-shadow: 0px 0px 20px 0px #000;
+	-moz-box-shadow: 0px 0px 20px 0px #000;
+	box-shadow: 0px 0px 20px 0px #000;
+	background: white;
+}
+
+.page-header
+{
+	background: black;
+	padding: 20px 10px 0 10px;
+}
+
+.page-header h1
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 600px;
+	height: 41px;
+}
+
+.page-header h1.page-header-archive
+{
+	background-image: url('../img/logo_archive.png');
+}
+
+.page-header h1.page-header-art
+{
+	background-image: url('../img/logo_art.png');
+}
+
+.page-header h1.page-header-downloads
+{
+	background-image: url('../img/logo_downloads.png');
+}
+
+.page-header h1.page-header-newreaders
+{
+	background-image: url('../img/logo_newreaders.png');
+}
+
+
+/* to create more headers, copy and modify code below
+
+.page-header h1.page-header-PAGENAME
+{
+	background-image: url('../img/logo_PAGENAME.png');
+}
+
+and in html code use
+
+<div class="page-header">
+	<h1 class="page-header-PAGENAME">PAGE NAME</h1>
+</div>
+*/
+
+/* == Sidebar == */
+
+.sidebar-box
+{
+	width: 350px;
+	margin: 0 0 25px 30px; /* bottom and left */
+}
+
+/* == Footer == */
+
+#footer
+{
+	background: black;
+	border-top: 2px solid #ffffff;
+	height: 40px;
+	line-height: 40px;
+	color: #888;
+	position: relative;
+}
+
+#footer .container
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#footer a:hover, a#forum:hover {
+    color: #fff;
+}
+
+#footer .column.donate
+{
+	text-align: right;
+}
+
+/*
+ * == SAM AND FUZZY header.css ==
+ */
+
+.header-top
+{
+	position: relative;
+	height: 193px;
+	background: #a59c9d url('../img/bg.png') 50% 0 repeat-x;
+	
+	margin: 0 -10px;
+	padding: 0 10px;
+}
+
+.header-top h1
+{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 270px;
+	height: 157px;
+}
+
+.header-top h1 a
+{
+	display: block;
+	width: 270px;
+	height: 157px;
+	background: url('../img/logo.png');
+}
+
+.header-top .ads
+{
+	position: absolute;
+	left: 275px;
+	top: 35px;
+}
+
+.header-top > .nav-top,
+.header-top > .nav-top li,
+.header-top > .nav-top a
+{
+	height: 36px;
+}
+
+.header-top ul.nav-top
+{
+	position: absolute;
+	top: 157px;
+	width: 100%;
+}
+
+	.header-top ul.nav-top > li.nav-spacing
+	{
+		width: 36px;
+		background: url('../img/newreader_triangle.png') 0 0 no-repeat;
+	}
+
+	.header-top ul.nav-top > li.new-reader a
+	{
+		width: 165px;
+		background: url('../img/newreader.png') 0 0 no-repeat;
+	}
+
+	.header-top ul.nav-top > li a
+	{
+		background-image: url('../img/nav_menu.png');
+		background-repeat: no-repeat;
+	}
+
+	.header-top ul.nav-top > li.archive a
+	{
+		width: 60px;	
+	}
+	.header-top ul.nav-top > li.archive a:hover { background-position: 0 -36px; }
+
+	.header-top ul.nav-top > li.rss a
+	{
+		background-position: -60px 0;
+		width: 35px;
+	}
+	.header-top ul.nav-top > li.rss a:hover { background-position: -60px -36px; }
+
+	.header-top ul.nav-top > li.downloads-ebooks a
+	{
+		background-position: -95px 0;
+		width: 135px;
+	}
+	.header-top ul.nav-top > li.downloads-ebooks a:hover { background-position: -95px -36px; }
+
+	.header-top ul.nav-top > li.art-commisions a
+	{
+		background-position: -230px 0;
+		width: 110px;
+	}
+	.header-top ul.nav-top > li.art-commisions a:hover { background-position: -230px -36px; }
+
+	.header-top ul.nav-top > li.online-shop a
+	{
+		background-position: -340px 0;
+		width: 85px;
+	}
+	.header-top ul.nav-top > li.online-shop a:hover { background-position: -340px -36px; }
+
+/*
+ * == SAM AND FUZZY home.css ==
+ */
+
+.comic-box
+{
+	background: black;
+}
+
+.comic-box > h1
+{
+	padding: 25px 20px 0 20px; 
+	font-size: 16px;
+	color: #707070;
+}
+
+.comic-box > .comic-image
+{
+	display: block;
+	margin: 0 auto;
+}
+
+.nav-comic,
+.nav-comic li,
+.nav-comic li a.block
+{
+	height: 35px;
+}
+
+.nav-comic
+{
+	width: 100%;
+}
+
+	/* NAVIGATION-SPECIFIC - images go here */
+
+	.nav-comic > li
+	{
+		background-image: url('../img/archive_nav_menu.png');
+		background-repeat: no-repeat;
+	}
+
+	/* TOP COMIC NAV */
+	.nav-comic > li.nav-spacing
+	{
+		width: 40px;
+		background-position: -291px 0;
+	}
+
+	.nav-comic > li.toc /* Table of contents */
+	{
+		width: 145px;
+		background-position: 0 0;
+	}
+	.nav-comic > li.toc:hover { background-position: 0 -35px; }
+	
+	.nav-comic > li.start-chapter
+	{
+		width: 145px;
+		background-position: -145px 0;
+	}
+	.nav-comic > li.start-chapter:hover { background-position: -145px -35px; }
+
+	.nav-comic > li.prev-page
+	{
+		width: 130px;
+		background-position: -331px 0;
+	}
+	.nav-comic > li.prev-page:hover { background-position: -331px -35px; }
+
+	.nav-comic > li.next-page
+	{
+		width: 125px;
+		background-position: -461px 0;
+	}
+	.nav-comic > li.next-page:hover { background-position: -461px -35px; }
+
+/* TABLE OF CONTENST */
+
+#toc
+{
+	background: #463D3E;
+	position: absolute;
+	top: 305px;   <!-------drop menu height controller, normal 271, 305 patreon-------->
+	left: 0;
+	width: 290px;
+	color: #888;
+	display: none;
+}
+
+#toc h1
+{
+	margin: 5px 10px;
+	font-weight: bold;
+}
+
+#toc p
+{
+	margin: 5px 10px 10px 10px;
+}
+
+#toc p a
+{
+	border-bottom: 1px solid #888;
+}
+
+#toc a
+{
+	color: #888;
+}
+
+#toc a:hover
+{
+	color: white;
+}
+
+#toc ul.volumes
+{
+	list-style-type: nonel;
+}
+
+#toc ul.volumes > li
+{
+	padding-left: 25px;
+	background: url('../img/triangle1.png') 5px 0 no-repeat;
+}
+
+#toc ul.volumes > li.open
+{
+	background: url('../img/triangle2.png') 5px 0 no-repeat;
+}
+
+#toc ul.volumes > li.open ol.chapters
+{
+	display: block;
+}
+
+#toc ol.chapters
+{
+	display: none;
+	margin-left: 20px;
+}
+
+#toc ol.chapters > li.active,
+#toc ol.chapters > li.active a
+{
+	color: white
+}
+
+
+.nav-comic.nav-bottom
+{
+	margin-bottom: 20px;
+}
+
+	.nav-comic > li.bookmarks
+	{
+		width: 290px;
+		background: #322C2C;
+	}
+
+		.nav-comic > li.bookmarks > a.bookmark
+		{
+			width: 290px;
+			height: 20px;
+			background: url('../img/bookmark_title.png') 0 0 no-repeat;
+		}
+
+		.nav-comic > li.bookmarks > a.tag-page,
+		.nav-comic > li.bookmarks > a.goto-tag,
+		.nav-comic > li.bookmarks > a.clear-tag,
+		.nav-comic > li.bookmarks > a.help
+		{
+			height: 15px;
+			float: left;
+		}
+
+		.nav-comic > li.bookmarks > a.tag-page
+		{
+			width: 75px;
+			background: url('../img/bookmark_tag.png') 18px 0 no-repeat;
+		}
+
+		.nav-comic > li.bookmarks > a.goto-tag
+		{
+			width: 60px;
+			background: url('../img/bookmark_goto.png') 0 0 no-repeat;
+		}
+
+		.nav-comic > li.bookmarks > a.clear-tag
+		{
+			width: 65px;
+			background: url('../img/bookmark_clear.png') 0 0 no-repeat;
+		}
+
+		.nav-comic > li.bookmarks > a.help
+		{
+			width: 35px;
+			background: url('../img/bookmark_help.png') 0 0 no-repeat;
+		}
+
+/* SHARE BAR */
+
+.comic-box > .share
+{
+	padding: 7px 20px 5px 20px;
+	height: 22px;
+}
+
+.comic-box > .share
+{
+	background: #B5B5B5;
+}
+
+/* AUTHOR NOTE */
+
+.author-note > h1
+{
+	font-size: 16px;
+	text-align: right;
+	padding: 20px;
+	background: black;
+	color: #BBB;
+}
+
+	.author-note > h1 small
+	{
+		color: #707070;
+	}
+
+.author-note > div.date
+{
+	padding: 20px 10px 0px 10px;
+	font-weight: bold;
+}
+
+.author-note > div.post
+{
+	padding: 0px 10px 10px 10px;
+}
+
+
+	.author-note .post h1,
+	.author-note .post h2,
+	.author-note .post h3,
+	.author-note .post h4,
+	.author-note .post h5,
+	.author-note .post h6,
+	.author-note .post ul,
+	.author-note .post pre,
+	.author-note .post p,
+	.author-note .post blockquote
+	{
+		margin-bottom: 10px;
+	}
+
+.content > div.page-content
+{
+	text-align: justify;
+	padding: 10px;
+}
+
+.content > div.page-content p,
+.content > div.page-content blockquote
+.content > div.page-content ul
+.content > div.page-content ol
+.content > div.page-content dl,
+.content > div.page-content table
+{
+	margin-bottom: 10px;
+}
+
+/*
+ * == SAM AND FUZZY home.css ==
+ */
+
+.sidebar-housead
+{
+	position: relative;
+	width: 360px;
+	margin: -20px 0 -25px 20px;
+}
+
+.sidebar-upcoming
+{
+	background: #504849 url('../img/sidebar_upcoming.png') 0% 0% no-repeat;
+	color: #aaa;
+	padding: 35px 0px 0px 0px;
+}
+
+.sidebar-upcoming p
+{
+	margin: 0 5px 5px 15px;
+	line-height: 15px;
+}
+
+.sidebar-upcoming a
+{
+	display: block;
+	color: #ccc;
+}
+
+.sidebar-upcoming a:hover
+{
+	color: #eee
+}
+
+#twitter_update_list li
+{
+	padding-left: 15px;
+}
+#tweets li
+{
+        padding-left: 15px;
+}
+
+.sidebar-boxad,
+.sidebar-sidead
+{
+	background: #bcb5b6;
+	color: #aaa;
+}
+
+.sidebar-boxad
+{
+	background: #BCB5B6 url('../img/advertisement_vertical.png') 0 100% no-repeat;	
+}
+
+.sidebar-boxad .ad-container
+{
+	padding: 10px 25px;
+}
+
+.sidebar-sidead
+{
+	background: #BCB5B6 url('../img/advertisement_horizontal.png') 100% 100% no-repeat;
+}
+
+.sidebar-sidead div.ad-container
+{
+	padding: 10px 7px 25px 8px;
+}
+
+.sidebar-projects
+{
+	background: #504849 url('../img/sidebar_other.png') 0% 0% no-repeat;
+	color: #aaa;
+	padding: 40px 0px 10px 0px;
+	overflow: hidden;
+}
+
+.sidebar-projects li
+{
+	padding: 0 10px 5px 10px;
+}
+
+.sidebar-projects a
+{
+	float: left;
+}
+
+.sidebar-projects li.skull-panda a
+{
+	background: url('../img/sidebar_skullpanda_full.png') 0 0 no-repeat;
+	width: 309px;
+	height: 47px;
+}
+
+.sidebar-projects li.tumblr a
+{
+	background: url('../img/sidebar_tumblr_full.png') 0 0 no-repeat;
+	width: 161px;
+	height: 53px;
+}
+
+.sidebar-projects li.deviantart a
+{
+	background: url('../img/sidebar_deviantart_full.png') 0 0 no-repeat;
+	width: 148px;
+	height: 53px;
+}
+
+.sidebar-recommended li
+{
+	padding-left: 15px;
+}
+
+.sidebar-sponsors
+{
+	background: #504849 url('../img/sidebar_sponsors.png') 0% 0% no-repeat;
+	color: #aaa;
+	margin: 20px 30px 0px 0px;
+	padding: 40px 14px 10px 14px;
+	line-height: 12px
+}
+
+.sidebar-sponsors img
+{
+	display: block;
+}
+
+.content > .archive
+{
+	text-align: justify;
+	padding: 10px 20px;
+}
+
+.content > .archive-menu
+{
+	margin-top: 10px;
+}
+
+.content > .archive-menu,
+.content > .archive-menu > li,
+.content > .archive-menu > li > a
+{
+	height: 38px;
+	background-color: #BBB4B5;
+}
+
+	.content > .archive-menu > li > a
+	{
+		background-image: url('../img/archive_nav_viewmenu.png');
+		background-repeat: no-repeat;
+	}
+
+	.content > .archive-menu > li.view-by
+	{
+		background: url('../img/archive_nav_viewmenu.png') 0 0 no-repeat;
+		text-indent: -999em;
+		width: 100px;
+	}
+	
+	.content > .archive-menu > li.story-arc a
+	{
+		background-position: -100px 0;
+		width: 85px;
+	}
+
+	.content > .archive-menu > li.story-arc a:hover,
+	.content > .archive-menu > li.story-arc.active a
+	{
+		background-position: -100px -38px;
+	}
+
+	.content > .archive-menu > li.month-and-year a
+	{
+		background-position: -185px 0;
+		width: 120px;
+	}
+
+	.content > .archive-menu > li.month-and-year a:hover,
+	.content > .archive-menu > li.month-and-year.active a
+	{
+		background-position: -185px -38px;
+	}
+
+	.content > .archive-menu > li.custom-date-range a
+	{
+		background-position: -305px 0;
+		width: 145px;
+	}
+
+	.content > .archive-menu > li.custom-date-range a:hover,
+	.content > .archive-menu > li.custom-date-range.active a
+	{
+		background-position: -305px -38px;
+	}
+
+	.content > .archive-menu > li.character a
+	{
+		background-position: -450px 0;
+		width: 65px;
+	}
+
+	.content > .archive-menu > li.character a:hover,
+	.content > .archive-menu > li.character.active a
+	{
+		background-position: -450px -38px;
+	}
+
+.content > .archive.current-story,
+.content > .archive.past-stories
+{
+	border-bottom: 50px solid black;
+}
+
+.content > .archive .container
+{
+	margin: 10px 0;
+}
+
+.content > .archive.past-stories .container
+{
+	margin-bottom: 40px
+}
+
+.content > .archive.volume-zero 
+{
+	padding-top: 20px
+}
+
+.content > .archive p
+{
+	margin-bottom: 15px;
+}
+
+.content > .archive em
+{
+	color: #900;
+	font-weight: bold;
+}
+
+.content > .archive h2
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.content > .archive h3
+{
+	line-height: 18px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.content > .archive .column.description h4
+{
+	margin: 3px 10px 3px 10px;
+	line-height: 16px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.content > .archive .column.description h4 small
+{
+	display: block;
+	font-size: 14px;
+}
+
+.content > .archive .column.description p
+{
+	margin: 10px;
+}
+
+.content > .archive .navigation,
+.content > .archive .navigation > li,
+.content > .archive .navigation > li a
+{
+	height: 38px;
+}
+
+	.content > .archive .navigation > li a
+	{
+		background-image: url('../img/archive_nav_volume.png');
+		background-repeat: no-repeat;
+	}
+
+	.content > .archive .navigation > li.read-online a
+	{
+		width: 95px;
+	}
+
+	.content > .archive .navigation > li.read-online a:hover
+	{
+		background-position: 0 -38px;
+	}
+		
+	.content > .archive .navigation > li.buy-the-book a
+	{
+		background-position: -95px 0;
+		width: 100px;	
+	}
+
+	.content > .archive .navigation > li.buy-the-book a:hover
+	{
+		background-position: -95px -38px;
+	}
+	
+	.content > .archive .navigation > li.buy-the-ebook a
+	{
+		background-position: -195px 0;
+		width: 108px;	
+	}
+
+	.content > .archive .navigation > li.buy-the-ebook a:hover
+	{
+		background-position: -195px -38px;
+	}
+	
+	.content > .archive .navigation > li.nav-spacing
+	{
+		background: url('../img/archive_nav_volume.png') -302px 0;
+		width: 38px;
+	}
+
+.content > .archive.month-and-year ul.years
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 10px 0 20px 0;
+	font-size: 14px;
+}
+
+	.content > .archive.month-and-year ul.years li
+	{
+		display: inline;
+		font-weight: bold;
+		/* how about I show you a magic trick? */
+	}
+
+	.content > .archive.month-and-year ul.years li a
+	{
+		color: #888;
+	}
+
+	.content > .archive.month-and-year ul.years li a:hover,
+	.content > .archive.month-and-year ul.years li.active a
+	{
+		color: #000;
+	}
+
+	.content > .archive.month-and-year ul.years li:before
+	{
+		color: #ccc;
+		content: "•"; 
+		margin-right: 5px;
+	}
+
+	.content > .archive.month-and-year ul.years li:first-child:before
+	{
+		content: "";
+	}
+	
+.content > .archive div.archive-column
+{
+	text-align: center;
+}
+	
+	.content > .archive div.archive-column h2
+	{
+		font-weight: bold;
+		background: #aaa;
+		padding: 5px;
+		margin: 0 10px;
+	}
+
+	.content > .archive div.archive-column ul
+	{
+		margin: 10px;
+	}
+	
+.content > .archive.range h2,
+.content > .archive.tags h2
+{
+	display: block;
+	text-align: center;
+}
+
+.content > .archive .tag-container
+{
+	margin: 10px 5px;
+}
+
+.content > .archive .tag-container .tag-column
+{
+	display: block;
+	width: 190px;
+	text-align: center;
+	padding: 3px 0;
+	color: #888;
+}
+
+.content > .archive .tag-container .tag-column:hover
+{
+	color: #000
+}
+
