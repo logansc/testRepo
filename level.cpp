@@ -29,7 +29,7 @@ QPair<int,int> direction, int curSet, int curFrame, QString spriteType){
     this->width = levelWidth;
     this->height = levelHeight;
 
-    enemies = QList<body>();
+yeahhhhh
     structures = QList<body>();
     allies = QList<body>();
 
