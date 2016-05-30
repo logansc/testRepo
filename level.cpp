@@ -15,6 +15,9 @@ Level::Level(){
 
 #comments, let's make a conflict.  this was added from gitTest original
 
+
+##new set of comments, etcs. yeah. from gitest2
+
 Level::Level(int levelWidth, int levelHeight, QString type, int playerWidth, int playerHeight, int xPos, int yPos, int velocity,
 QPair<int,int> direction, int curSet, int curFrame, QString spriteType){
     this->width = levelWidth;
