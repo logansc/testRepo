@@ -22,6 +22,7 @@ Level::Level(){
 ##new set of comments, etcs. yeah. from gitest2
 
 #XXXX comments from 1
+#XXX comments 2
 
 Level::Level(int levelWidth, int levelHeight, QString type, int playerWidth, int playerHeight, int xPos, int yPos, int velocity,
 QPair<int,int> direction, int curSet, int curFrame, QString spriteType){
