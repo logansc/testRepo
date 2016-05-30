@@ -24,12 +24,15 @@ Level::Level(){
 #XXXX comments from 1
 #XXX comments 2
 
+#comments for days from test2
+
 Level::Level(int levelWidth, int levelHeight, QString type, int playerWidth, int playerHeight, int xPos, int yPos, int velocity,
 QPair<int,int> direction, int curSet, int curFrame, QString spriteType){
     this->width = levelWidth;
     this->height = levelHeight;
 
 yeahhhhh
+    enemies not equal test 2
     structures = QList<body>();
     allies = QList<body>();
 
