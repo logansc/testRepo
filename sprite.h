@@ -24,3 +24,6 @@ public:
 };
 
 #endif // SPRITE_H
+
+
+These are the more important changes, they will overwrite
