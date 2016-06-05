@@ -4,7 +4,6 @@ second attempt, want to revert this
 New commit, there should be nothing above this if revert is successful.
 
 
-
 changes that will be reverted over, from gt2
 
 
